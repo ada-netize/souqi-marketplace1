@@ -126,5 +126,4 @@ EXPO_PUBLIC_API_URL=http://YOUR-LAN-IP:5000
 - `IAP-SETUP.txt`
 - `DELIVERED-FIXES.txt`
 - `start-project.bat`
-"# souqi-marketplace1" 
 "# souqi-marketplace2" 
