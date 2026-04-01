@@ -1,0 +1,19 @@
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    instance_type: mac_mini_m2
+    max_build_duration: 120
+
+    environment:
+      node: 20
+
+    scripts:
+      - name: Go to mobile app
+        script: |
+          cd mobile-app
+          npm install --legacy-peer-deps
+
+      - name: Check Expo config
+        script: |
+          cd mobile-app
+          npx expo config --type public
