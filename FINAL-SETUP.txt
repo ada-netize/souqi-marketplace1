@@ -1,0 +1,41 @@
+SOUQI — FINAL SETUP
+===================
+
+1) من جذر المشروع:
+
+npm install --ignore-scripts
+npm run install:mobile
+npm run seed
+
+2) تشغيل الخدمات:
+
+npm run dev:api
+npm run dev:admin
+
+3) تشغيل الموبايل:
+
+cd mobile-app
+npx expo start --clear
+
+الروابط:
+- API:   http://localhost:5000
+- Admin: http://localhost:3000
+- Web:   http://localhost:3000/market
+
+بيانات الأدمن:
+- admin@example.com
+- 12345678
+
+أول مستخدم:
+- أنشئه من التطبيق عبر التسجيل أو OTP
+- لا توجد حسابات تجريبية جاهزة داخل هذه النسخة
+
+مهم:
+- إذا عدّلت الأسعار أو الباقات أو الأقسام أو المدن من الموقع فستنعكس على التطبيق
+- إذا أضاف المستخدم إعلانًا أو عدّله من التطبيق فسيظهر على الموقع عبر نفس قاعدة البيانات
+- المستخدم المحظور يُمنع من الدخول وتختفي إعلاناته من الواجهة العامة
+
+المتبقي فقط للنشر الحقيقي:
+- App Store Connect
+- Google Play Console
+- دومين واستضافة عند الحاجة

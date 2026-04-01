@@ -1,0 +1,17 @@
+{
+  "name": "souqi-marketplace-admin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "dependencies": {
+    "framer-motion": "^12.6.5",
+    "next": "14.2.25",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^2.15.1"
+  }
+}

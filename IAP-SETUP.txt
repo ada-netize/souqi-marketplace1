@@ -1,0 +1,37 @@
+SOUQI IAP SETUP
+===============
+
+هذه النسخة مهيأة لمنطق المزايا الرقمية فقط.
+لا يوجد شراء للسلعة نفسها داخل التطبيق.
+
+Apple App Store Product IDs:
+- souqi_raise_1_day
+- souqi_raise_3_days
+- souqi_boost_3_days
+- souqi_featured_3_days
+- souqi_store_basic_monthly
+- souqi_store_plus_monthly
+- souqi_store_pro_monthly
+
+Google Play Product IDs:
+- souqi_raise_1_day
+- souqi_raise_3_days
+- souqi_boost_3_days
+- souqi_featured_3_days
+- souqi_store_basic_monthly
+- souqi_store_plus_monthly
+- souqi_store_pro_monthly
+
+ما هو جاهز داخل المشروع:
+- شاشة Packages / Promote / Subscribe
+- Catalog من الـ API
+- Backend endpoint للتفعيل: /api/user/iap/activate
+- حفظ السجل في digital_purchases
+- تفعيل المزايا على الإعلانات والاشتراكات
+- صفحة إعدادات في الأدمن لتعديل الأسعار والـ IDs
+
+ما بقي عليك فقط:
+1) إنشاء نفس المنتجات في App Store Connect
+2) إنشاء نفس المنتجات في Google Play Console
+3) ربط receipt validation / purchase verification الحقيقي
+4) عمل production build للتطبيق

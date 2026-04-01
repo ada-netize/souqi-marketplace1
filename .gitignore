@@ -1,0 +1,12 @@
+node_modules
+.npm
+dist
+build
+.next
+expo-env.d.ts
+backend-api/uploads/*
+!backend-api/uploads/.gitkeep
+backend-api/data/*.db
+mobile-app/.expo
+mobile-app/dist
+*.log

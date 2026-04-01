@@ -1,0 +1,26 @@
+{
+  "name": "souqi-marketplace",
+  "private": true,
+  "version": "1.7.0",
+  "workspaces": [
+    "backend-api",
+    "admin-dashboard"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "seed": "npm --workspace backend-api run seed",
+    "dev": "concurrently -n API,ADMIN,MOBILE -c green,cyan,magenta \"npm run dev:api\" \"npm run dev:admin\" \"npm run dev:mobile\"",
+    "dev:api": "npm --workspace backend-api run dev",
+    "dev:admin": "npm --workspace admin-dashboard run dev",
+    "dev:mobile": "cd mobile-app && npx expo start --clear",
+    "build": "npm --workspace admin-dashboard run build",
+    "zip": "powershell -ExecutionPolicy Bypass -File scripts/zip-project.ps1",
+    "install:mobile": "cd mobile-app && npm install --legacy-peer-deps"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=22 <23"
+  }
+}

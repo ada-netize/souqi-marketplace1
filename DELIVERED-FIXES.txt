@@ -1,0 +1,26 @@
+Souqi launch-ready package fixes applied (2026-04-01)
+
+1) Listing sale completion
+- Accepting an offer from the seller now marks the listing as sold immediately.
+- Other open offers on the same listing are closed automatically.
+- Manual mark-sold also closes pending/countered offers.
+- Conversation messages and notifications reflect the completed sale.
+
+2) Mandatory listing images
+- Creating a new listing now requires at least one image in both app UI and backend.
+- App shows clear note that photos are required before publishing.
+
+3) Strict email/phone validation
+- Email fields now accept email format only.
+- Phone / WhatsApp fields now accept digits only and validate on app + backend.
+- Profile, register, OTP, login, and listing forms were tightened.
+
+4) Better sale flow inside the app
+- Conversation screen now shows offers with seller actions.
+- Seller can accept/reject offer directly from the conversation.
+- Once accepted, listing status becomes sold and further negotiation is blocked.
+- Sold listings show a clear sold banner and disable new negotiation.
+
+5) Launch cleanliness
+- App login fields are blank by default.
+- Launch-ready seed remains without sample users/listings/conversations.
