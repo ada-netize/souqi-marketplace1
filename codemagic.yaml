@@ -8,12 +8,7 @@ workflows:
       node: 20
 
     scripts:
-      - name: Go to mobile app
+      - name: Install mobile app dependencies
         script: |
           cd mobile-app
           npm install --legacy-peer-deps
-
-      - name: Check Expo config
-        script: |
-          cd mobile-app
-          npx expo config --type public
